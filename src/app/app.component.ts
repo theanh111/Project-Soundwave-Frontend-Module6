@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 
+// @ts-ignore
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Project-Soundwave-Frontend-Module6';
+  title = 'Sound Wave - Online Audio Streaming';
 }

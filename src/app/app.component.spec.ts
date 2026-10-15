@@ -16,16 +16,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'Project-Soundwave-Frontend-Module6'`, () => {
+  it(`should have as title 'Soundwave-Project-FrontEnd-Module6'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('Project-Soundwave-Frontend-Module6');
+    expect(app.title).toEqual('Soundwave-Project-FrontEnd-Module6');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('Project-Soundwave-Frontend-Module6 app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('Soundwave-Project-FrontEnd-Module6 app is running!');
   });
 });
