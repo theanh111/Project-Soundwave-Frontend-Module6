@@ -1,10 +1,6 @@
-<div id="top"></div>
-
-<!-- PROJECT LOGO -->
-<br />
 <div align="center">
   <a href="https://github.com/KhanhNguyen1410/soundwave-frontend">
-    <img src="src\assets\images\logo.png" alt="Logo">
+    <img src="src\assets\images\logo.png" alt="Logo" width="20%" height="20%">
   </a>
 
   <h3 align="center">SoundWave</h3>
@@ -12,183 +8,74 @@
   <p align="center">
     An awesome streaming music platform!
     <br />
-    <a href="https://github.com/KhanhNguyen1410/soundwave-frontend"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/KhanhNguyen1410/soundwave-frontend">View Demo</a>
-    ·
-    <a href="https://github.com/KhanhNguyen1410/soundwave-frontend">Report Bug</a>
-    ·
-    <a href="https://github.com/KhanhNguyen1410/soundwave-frontend">Request Feature</a>
-  </p>
+
 </div>
 
-<!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
-  </ol>
-</details>
+# Sound Wave — Online Music Streaming Website
 
-<!-- ABOUT THE PROJECT -->
+> A web-based music platform where people can listen to songs, discover music, create their own playlists, and share their musical creations with the world.
 
-## About The Project
+## About the Project
 
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
+**Sound Wave** is an online music streaming website designed to let users enjoy music from anywhere. It also gives users the ability to add songs, build personal playlists, and manage their music collections.
 
-Here's why:
+This project was developed as a team project to practice collaborative web development and connect front-end interfaces with back-end APIs.
 
-- Your time should be focused on creating something amazing. A project that solves a problem and helps others
-- You shouldn't be doing the same tasks over and over like creating a README from scratch
-- You should implement DRY principles to the rest of your life :smile:
+## Key Features
 
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
+- **Listen to Music** — Play songs available on the website.
+- **Browse Songs** — View songs in the music library.
+- **Add Songs** — Add new songs to the website.
+- **Create Playlists** — Build personal song lists.
+- **Manage Music** — Edit and customize songs and playlists.
 
-Use the `BLANK_README.md` to get started.
+## Project Details
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+| Item               | Details                                                           |
+| ------------------ | ----------------------------------------------------------------- |
+| Project type       | Online music streaming website                                    |
+| Development period | January 11–24, 2021                                               |
+| Team size          | 5 members                                                         |
+| Team structure     | 1 Scrum Master and 4 Developers                                   |
+| Main focus         | Core music-streaming workflows and front-end/back-end integration |
 
-### Built With
+The project focused on delivering the core features within the available timeframe. More advanced functionality would require additional development and refinement.
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+## Team
 
-- [Angular](https://angular.io/)
+- Trần Thế Anh
+- Nguyễn Đức Khánh
+- Nguyễn Tuấn Anh
+- Nguyễn Thanh Tiến
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+## What We Accomplished
 
-<!-- GETTING STARTED -->
+- Practiced team collaboration using Git.
+- Learned to divide tasks and coordinate development work.
+- Explored and applied new technologies during implementation.
+- Completed most of the required back-end and front-end workflows.
+- Built an initial product integrating the front end with APIs.
 
-## Getting Started
+## Challenges
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+- **Git merge conflicts:** Conflicts occurred throughout the collaborative development process.
+- **Limited Angular experience:** Our familiarity with Angular made it more difficult to display and handle data as intended.
 
-### Prerequisites
+## Lessons Learned
 
-This is an example of how to list things you need to use the software and how to install them.
+- Improved teamwork and task coordination.
+- Gained a broader understanding of how to build a music-streaming website.
+- Learned more about communication and integration between front-end and back-end components.
+- Gained practical experience working with Git in a team environment.
 
-- npm
-  ```sh
-  npm install npm@latest -g
-  ```
+## Technologies
 
-### Installation
+- **Angular** — Mentioned in the project retrospective as a technology the team was learning.
+- **Git** — Version control and team collaboration.
+- **APIs** — Connecting the front end with back-end functionality.
 
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
+> **Note:** The original project presentation does not provide a complete technology list, so this section includes only technologies and tools explicitly mentioned or supported by the presentation.
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/your_username_/Project-Name.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = "ENTER YOUR API";
-   ```
+---
 
-### Node.js compatibility
-
-This project uses Angular 11 and webpack 4. On Node.js 17 and newer, including the Node.js 24 runtime used by Vercel, the project scripts enable Node's legacy OpenSSL provider for Angular CLI commands to avoid the `ERR_OSSL_EVP_UNSUPPORTED` error.
-
-Run Angular CLI commands through the project scripts, for example `npm run build` or `npm run ng -- serve`.
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-<!-- USAGE EXAMPLES -->
-
-## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-<!-- ROADMAP -->
-
-## Roadmap
-
-- [x] Add Changelog
-- [x] Add back to top links
-- [ ] Add Additional Templates w/ Examples
-- [ ] Add "components" document to easily copy & paste sections of the readme
-- [ ] Multi-language Support
-  - [ ] Chinese
-  - [ ] Spanish
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-<!-- CONTRIBUTING -->
-
-## Contributing
-
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-<!-- LICENSE -->
-
-## License
-
-Distributed under the MIT License. See `LICENSE.txt` for more information.
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-<!-- CONTACT -->
-
-## Contact
-
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
-
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-<!-- ACKNOWLEDGMENTS -->
-
-## Acknowledgments
-
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
-
-- [Choose an Open Source License](https://choosealicense.com)
-- [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-- [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
-- [Malven's Grid Cheatsheet](https://grid.malven.co/)
-- [Img Shields](https://shields.io)
-- [GitHub Pages](https://pages.github.com)
-- [Font Awesome](https://fontawesome.com)
-- [React Icons](https://react-icons.github.io/react-icons/search)
-
-<p align="right">(<a href="#top">back to top</a>)</p>
+_Sound Wave was developed as a team project from January 11 to January 24, 2021._
