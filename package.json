@@ -2,13 +2,13 @@
   "name": "soundwave-project-front-end-module6",
   "version": "0.0.0",
   "scripts": {
-    "ng": "ng",
+    "ng": "node scripts/ng.js",
     "start": "node server.js",
-    "build": "ng build",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e",
-    "heroku-postbuild": "ng build --prod"
+    "build": "npm run ng -- build",
+    "test": "npm run ng -- test",
+    "lint": "npm run ng -- lint",
+    "e2e": "npm run ng -- e2e",
+    "heroku-postbuild": "npm run ng -- build --prod"
   },
   "private": true,
   "dependencies": {

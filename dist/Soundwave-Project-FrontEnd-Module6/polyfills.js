@@ -7,7 +7,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! D:\CodeGym\Module_06\Soundwave-Project-FrontEnd-Module6\src\polyfills.ts */"hN/g");
+module.exports = __webpack_require__(/*! D:\Works\New Career\Portfolio Projects\SoundWave\Project-Soundwave-Frontend-Module6\src\polyfills.ts */"hN/g");
 
 
 /***/ }),

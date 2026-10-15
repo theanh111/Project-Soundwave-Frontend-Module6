@@ -12,7 +12,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AuthService", function() { return AuthService; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
 /* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! rxjs */ "qCKp");
-/* harmony import */ var _Project_Sound_Wave_FrontEnd_src_environments_environment__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../Project_Sound_Wave_FrontEnd/src/environments/environment */ "eCOg");
+/* harmony import */ var _environments_environment_prod__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../environments/environment.prod */ "cxbk");
 /* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs/operators */ "kU1M");
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/common/http */ "tk/3");
 // @ts-ignore
@@ -24,7 +24,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-const API_URL = `${_Project_Sound_Wave_FrontEnd_src_environments_environment__WEBPACK_IMPORTED_MODULE_2__["environment"].apiUrl}`;
+const API_URL = `${_environments_environment_prod__WEBPACK_IMPORTED_MODULE_2__["environment"].apiUrl}`;
 // @ts-ignore
 class AuthService {
     constructor(http) {
@@ -39,8 +39,7 @@ class AuthService {
     }
     // tslint:disable-next-line:typedef
     login(username, password) {
-        return this.http.post(API_URL + '/login', { username, password })
-            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["map"])(user => {
+        return this.http.post(API_URL + '/login', { username, password }).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["map"])((user) => {
             localStorage.setItem('user', JSON.stringify(user));
             this.currentUserSubject.next(user);
             this.update.emit('login');
@@ -66,7 +65,7 @@ AuthService.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjec
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](AuthService, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"],
         args: [{
-                providedIn: 'root'
+                providedIn: 'root',
             }]
     }], function () { return [{ type: _angular_common_http__WEBPACK_IMPORTED_MODULE_4__["HttpClient"] }]; }, null); })();
 
@@ -1021,7 +1020,7 @@ HomeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComp
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! D:\CodeGym\Module_06\Soundwave-Project-FrontEnd-Module6\src\main.ts */"zUnb");
+module.exports = __webpack_require__(/*! D:\Works\New Career\Portfolio Projects\SoundWave\Project-Soundwave-Frontend-Module6\src\main.ts */"zUnb");
 
 
 /***/ }),
@@ -1037,13 +1036,13 @@ module.exports = __webpack_require__(/*! D:\CodeGym\Module_06\Soundwave-Project-
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CategoryService", function() { return CategoryService; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
-/* harmony import */ var _Project_Sound_Wave_FrontEnd_src_environments_environment__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../../Project_Sound_Wave_FrontEnd/src/environments/environment */ "eCOg");
+/* harmony import */ var _environments_environment_prod__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../environments/environment.prod */ "cxbk");
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "tk/3");
 
 
 
 
-const urlApi = `${_Project_Sound_Wave_FrontEnd_src_environments_environment__WEBPACK_IMPORTED_MODULE_1__["environment"].apiUrl}`;
+const urlApi = `${_environments_environment_prod__WEBPACK_IMPORTED_MODULE_1__["environment"].apiUrl}`;
 // @ts-ignore
 class CategoryService {
     constructor(httpClient) {
@@ -1061,7 +1060,7 @@ CategoryService.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineI
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](CategoryService, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"],
         args: [{
-                providedIn: 'root'
+                providedIn: 'root',
             }]
     }], function () { return [{ type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"] }]; }, null); })();
 
@@ -1079,13 +1078,13 @@ CategoryService.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineI
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PlayListService", function() { return PlayListService; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
-/* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../environments/environment */ "AytR");
+/* harmony import */ var _environments_environment_prod__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../environments/environment.prod */ "cxbk");
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "tk/3");
 
 
 
 
-const URL_API = `${_environments_environment__WEBPACK_IMPORTED_MODULE_1__["environment"].apiUrl}`;
+const URL_API = `${_environments_environment_prod__WEBPACK_IMPORTED_MODULE_1__["environment"].apiUrl}`;
 class PlayListService {
     constructor(httpClient) {
         this.httpClient = httpClient;
@@ -1114,7 +1113,7 @@ PlayListService.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineI
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](PlayListService, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"],
         args: [{
-                providedIn: 'root'
+                providedIn: 'root',
             }]
     }], function () { return [{ type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"] }]; }, null); })();
 
@@ -1475,13 +1474,13 @@ CommentPlaylistService.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵ
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CommentSongService", function() { return CommentSongService; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
-/* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../environments/environment */ "AytR");
+/* harmony import */ var _environments_environment_prod__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../environments/environment.prod */ "cxbk");
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "tk/3");
 
 
 
 
-const URL_API = `${_environments_environment__WEBPACK_IMPORTED_MODULE_1__["environment"].apiUrl}`;
+const URL_API = `${_environments_environment_prod__WEBPACK_IMPORTED_MODULE_1__["environment"].apiUrl}`;
 class CommentSongService {
     constructor(httpClient) {
         this.httpClient = httpClient;
@@ -1498,7 +1497,7 @@ CommentSongService.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefi
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](CommentSongService, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"],
         args: [{
-                providedIn: 'root'
+                providedIn: 'root',
             }]
     }], function () { return [{ type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"] }]; }, null); })();
 
@@ -1791,13 +1790,13 @@ PlaylistDetailsComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵ�
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LikeSongService", function() { return LikeSongService; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
-/* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../environments/environment */ "AytR");
+/* harmony import */ var _environments_environment_prod__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../environments/environment.prod */ "cxbk");
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "tk/3");
 
 
 
 
-const URL_API = `${_environments_environment__WEBPACK_IMPORTED_MODULE_1__["environment"].apiUrl}`;
+const URL_API = `${_environments_environment_prod__WEBPACK_IMPORTED_MODULE_1__["environment"].apiUrl}`;
 class LikeSongService {
     constructor(httpClient) {
         this.httpClient = httpClient;
@@ -1820,7 +1819,7 @@ LikeSongService.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineI
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](LikeSongService, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"],
         args: [{
-                providedIn: 'root'
+                providedIn: 'root',
             }]
     }], function () { return [{ type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"] }]; }, null); })();
 
@@ -1841,7 +1840,7 @@ __webpack_require__.r(__webpack_exports__);
 // `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 const environment = {
-    production: false,
+    production: true,
     firebaseConfig: {
         // apiKey: 'AIzaSyAaF7cyqh4DoWEU2TkDXnUeFe0Le10uH6A',
         // authDomain: 'sound-wave-9d45d.firebaseapp.com',
@@ -1851,16 +1850,16 @@ const environment = {
         // messagingSenderId: '368542689977',
         // appId: '1:368542689977:web:2f10c095d4d791959b8968',
         // measurementId: 'G-XKDW7R2CS7'
-        apiKey: "AIzaSyADoaN1AaFkzx3AHsQSoBFl3Iv_JLqb0XE",
-        authDomain: "sound-wave-cd.firebaseapp.com",
+        apiKey: 'AIzaSyADoaN1AaFkzx3AHsQSoBFl3Iv_JLqb0XE',
+        authDomain: 'sound-wave-cd.firebaseapp.com',
         databaseURL: 'https://sound-wave-cd-default-rtdb.firebaseio.com/',
-        projectId: "sound-wave-cd",
-        storageBucket: "sound-wave-cd.appspot.com",
-        messagingSenderId: "996131844816",
-        appId: "1:996131844816:web:641a25610d96cf9452e4d5",
-        measurementId: "G-Q84RZCNF5J"
+        projectId: 'sound-wave-cd',
+        storageBucket: 'sound-wave-cd.appspot.com',
+        messagingSenderId: '996131844816',
+        appId: '1:996131844816:web:641a25610d96cf9452e4d5',
+        measurementId: 'G-Q84RZCNF5J',
     },
-    apiUrl: 'http://localhost:8080'
+    apiUrl: 'https://soundwave-project.herokuapp.com',
 };
 /*
  * For easier debugging in development mode, you can import the following file
@@ -3078,13 +3077,13 @@ AppComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineCompo
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AlbumService", function() { return AlbumService; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
-/* harmony import */ var _Project_Sound_Wave_FrontEnd_src_environments_environment__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../../Project_Sound_Wave_FrontEnd/src/environments/environment */ "eCOg");
+/* harmony import */ var _environments_environment_prod__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../environments/environment.prod */ "cxbk");
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "tk/3");
 
 
 
 
-const urlApi = `${_Project_Sound_Wave_FrontEnd_src_environments_environment__WEBPACK_IMPORTED_MODULE_1__["environment"].apiUrl}`;
+const urlApi = `${_environments_environment_prod__WEBPACK_IMPORTED_MODULE_1__["environment"].apiUrl}`;
 class AlbumService {
     constructor(httpClient) {
         this.httpClient = httpClient;
@@ -3101,7 +3100,7 @@ AlbumService.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInje
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](AlbumService, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"],
         args: [{
-                providedIn: 'root'
+                providedIn: 'root',
             }]
     }], function () { return [{ type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"] }]; }, null); })();
 
@@ -3119,13 +3118,13 @@ AlbumService.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInje
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LikePlaylistService", function() { return LikePlaylistService; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
-/* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../environments/environment */ "AytR");
+/* harmony import */ var _environments_environment_prod__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../environments/environment.prod */ "cxbk");
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "tk/3");
 
 
 
 
-const URL_API = `${_environments_environment__WEBPACK_IMPORTED_MODULE_1__["environment"].apiUrl}`;
+const URL_API = `${_environments_environment_prod__WEBPACK_IMPORTED_MODULE_1__["environment"].apiUrl}`;
 class LikePlaylistService {
     constructor(httpClient) {
         this.httpClient = httpClient;
@@ -3148,7 +3147,7 @@ LikePlaylistService.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdef
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](LikePlaylistService, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"],
         args: [{
-                providedIn: 'root'
+                providedIn: 'root',
             }]
     }], function () { return [{ type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"] }]; }, null); })();
 
@@ -3183,7 +3182,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! @angular/common/http */ "tk/3");
 /* harmony import */ var _angular_fire_storage__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! @angular/fire/storage */ "Vaw3");
 /* harmony import */ var _angular_fire__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! @angular/fire */ "spgP");
-/* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../environments/environment */ "AytR");
+/* harmony import */ var _environments_environment_prod__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../environments/environment.prod */ "cxbk");
 /* harmony import */ var _helper_jwt_interceptor__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./helper/jwt-interceptor */ "4MTJ");
 /* harmony import */ var _helper_error_interceptor__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./helper/error-interceptor */ "dmcY");
 /* harmony import */ var _landing_page_home_home_component__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./landing-page/home/home.component */ "/XLG");
@@ -3235,7 +3234,7 @@ class AppModule {
 AppModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineNgModule"]({ type: AppModule, bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_2__["AppComponent"]] });
 AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector"]({ factory: function AppModule_Factory(t) { return new (t || AppModule)(); }, providers: [
         { provide: _angular_common_http__WEBPACK_IMPORTED_MODULE_15__["HTTP_INTERCEPTORS"], useClass: _helper_jwt_interceptor__WEBPACK_IMPORTED_MODULE_19__["JwtInterceptor"], multi: true },
-        { provide: _angular_common_http__WEBPACK_IMPORTED_MODULE_15__["HTTP_INTERCEPTORS"], useClass: _helper_error_interceptor__WEBPACK_IMPORTED_MODULE_20__["ErrorInterceptor"], multi: true }
+        { provide: _angular_common_http__WEBPACK_IMPORTED_MODULE_15__["HTTP_INTERCEPTORS"], useClass: _helper_error_interceptor__WEBPACK_IMPORTED_MODULE_20__["ErrorInterceptor"], multi: true },
     ], imports: [[
             _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
             _app_routing_module__WEBPACK_IMPORTED_MODULE_11__["AppRoutingModule"],
@@ -3243,9 +3242,9 @@ AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector
             _angular_common_http__WEBPACK_IMPORTED_MODULE_15__["HttpClientModule"],
             _angular_forms__WEBPACK_IMPORTED_MODULE_14__["ReactiveFormsModule"],
             _angular_fire_storage__WEBPACK_IMPORTED_MODULE_16__["AngularFireStorageModule"],
-            _angular_fire__WEBPACK_IMPORTED_MODULE_17__["AngularFireModule"].initializeApp(_environments_environment__WEBPACK_IMPORTED_MODULE_18__["environment"].firebaseConfig, 'cloud'),
+            _angular_fire__WEBPACK_IMPORTED_MODULE_17__["AngularFireModule"].initializeApp(_environments_environment_prod__WEBPACK_IMPORTED_MODULE_18__["environment"].firebaseConfig, 'cloud'),
             _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_22__["NgbDropdownModule"],
-            _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_22__["NgbModule"]
+            _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_22__["NgbModule"],
         ]] });
 (function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsetNgModuleScope"](AppModule, { declarations: [_app_component__WEBPACK_IMPORTED_MODULE_2__["AppComponent"],
         _client_user_my_profile_my_profile_component__WEBPACK_IMPORTED_MODULE_3__["MyProfileComponent"],
@@ -3298,7 +3297,7 @@ AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector
                     _playlist_playlist_details_playlist_details_component__WEBPACK_IMPORTED_MODULE_25__["PlaylistDetailsComponent"],
                     _playlist_comment_playlist_comment_playlist_component__WEBPACK_IMPORTED_MODULE_30__["CommentPlaylistComponent"],
                     _client_user_term_of_user_term_of_user_component__WEBPACK_IMPORTED_MODULE_29__["TermOfUserComponent"],
-                    _playlist_comment_playlist_comment_playlist_component__WEBPACK_IMPORTED_MODULE_30__["CommentPlaylistComponent"]
+                    _playlist_comment_playlist_comment_playlist_component__WEBPACK_IMPORTED_MODULE_30__["CommentPlaylistComponent"],
                 ],
                 imports: [
                     _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
@@ -3307,15 +3306,15 @@ AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector
                     _angular_common_http__WEBPACK_IMPORTED_MODULE_15__["HttpClientModule"],
                     _angular_forms__WEBPACK_IMPORTED_MODULE_14__["ReactiveFormsModule"],
                     _angular_fire_storage__WEBPACK_IMPORTED_MODULE_16__["AngularFireStorageModule"],
-                    _angular_fire__WEBPACK_IMPORTED_MODULE_17__["AngularFireModule"].initializeApp(_environments_environment__WEBPACK_IMPORTED_MODULE_18__["environment"].firebaseConfig, 'cloud'),
+                    _angular_fire__WEBPACK_IMPORTED_MODULE_17__["AngularFireModule"].initializeApp(_environments_environment_prod__WEBPACK_IMPORTED_MODULE_18__["environment"].firebaseConfig, 'cloud'),
                     _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_22__["NgbDropdownModule"],
-                    _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_22__["NgbModule"]
+                    _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_22__["NgbModule"],
                 ],
                 providers: [
                     { provide: _angular_common_http__WEBPACK_IMPORTED_MODULE_15__["HTTP_INTERCEPTORS"], useClass: _helper_jwt_interceptor__WEBPACK_IMPORTED_MODULE_19__["JwtInterceptor"], multi: true },
-                    { provide: _angular_common_http__WEBPACK_IMPORTED_MODULE_15__["HTTP_INTERCEPTORS"], useClass: _helper_error_interceptor__WEBPACK_IMPORTED_MODULE_20__["ErrorInterceptor"], multi: true }
+                    { provide: _angular_common_http__WEBPACK_IMPORTED_MODULE_15__["HTTP_INTERCEPTORS"], useClass: _helper_error_interceptor__WEBPACK_IMPORTED_MODULE_20__["ErrorInterceptor"], multi: true },
                 ],
-                bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_2__["AppComponent"]]
+                bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_2__["AppComponent"]],
             }]
     }], null, null); })();
 
@@ -4611,6 +4610,53 @@ PlayingSongsComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵde
 
 /***/ }),
 
+/***/ "cxbk":
+/*!**********************************************!*\
+  !*** ./src/environments/environment.prod.ts ***!
+  \**********************************************/
+/*! exports provided: environment */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "environment", function() { return environment; });
+// This file can be replaced during build by using the `fileReplacements` array.
+// `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
+// The list of file replacements can be found in `angular.json`.
+const environment = {
+    production: true,
+    firebaseConfig: {
+        // apiKey: 'AIzaSyAaF7cyqh4DoWEU2TkDXnUeFe0Le10uH6A',
+        // authDomain: 'sound-wave-9d45d.firebaseapp.com',
+        // databaseURL: 'https://sound-wave-9d45d-default-rtdb.firebaseio.com/',
+        // projectId: 'sound-wave-9d45d',
+        // storageBucket: 'sound-wave-9d45d.appspot.com',
+        // messagingSenderId: '368542689977',
+        // appId: '1:368542689977:web:2f10c095d4d791959b8968',
+        // measurementId: 'G-XKDW7R2CS7'
+        apiKey: 'AIzaSyADoaN1AaFkzx3AHsQSoBFl3Iv_JLqb0XE',
+        authDomain: 'sound-wave-cd.firebaseapp.com',
+        databaseURL: 'https://sound-wave-cd-default-rtdb.firebaseio.com/',
+        projectId: 'sound-wave-cd',
+        storageBucket: 'sound-wave-cd.appspot.com',
+        messagingSenderId: '996131844816',
+        appId: '1:996131844816:web:641a25610d96cf9452e4d5',
+        measurementId: 'G-Q84RZCNF5J',
+    },
+    apiUrl: 'https://soundwave-project.herokuapp.com',
+};
+/*
+ * For easier debugging in development mode, you can import the following file
+ * to ignore zone related error stack frames such as `zone.run`, `zoneDelegate.invokeTask`.
+ *
+ * This import should be commented out in production mode because it will have a negative impact
+ * on performance if an error is thrown.
+ */
+// import 'zone.js/dist/zone-error';  // Included with Angular CLI.
+
+
+/***/ }),
+
 /***/ "dHQU":
 /*!***********************************************************!*\
   !*** ./src/app/song/create-song/create-song.component.ts ***!
@@ -5141,45 +5187,6 @@ ErrorInterceptor.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefine
 
 /***/ }),
 
-/***/ "eCOg":
-/*!**********************************************************************!*\
-  !*** ../Project_Sound_Wave_FrontEnd/src/environments/environment.ts ***!
-  \**********************************************************************/
-/*! exports provided: environment */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "environment", function() { return environment; });
-// This file can be replaced during build by using the `fileReplacements` array.
-// `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
-// The list of file replacements can be found in `angular.json`.
-const environment = {
-    production: false,
-    firebaseConfig: {
-        apiKey: 'AIzaSyAaF7cyqh4DoWEU2TkDXnUeFe0Le10uH6A',
-        authDomain: 'sound-wave-9d45d.firebaseapp.com',
-        databaseURL: 'https://sound-wave-9d45d-default-rtdb.firebaseio.com/',
-        projectId: 'sound-wave-9d45d',
-        storageBucket: 'sound-wave-9d45d.appspot.com',
-        messagingSenderId: '368542689977',
-        appId: '1:368542689977:web:2f10c095d4d791959b8968',
-        measurementId: 'G-XKDW7R2CS7'
-    },
-    apiUrl: 'http://localhost:8080'
-};
-/*
- * For easier debugging in development mode, you can import the following file
- * to ignore zone related error stack frames such as `zone.run`, `zoneDelegate.invokeTask`.
- *
- * This import should be commented out in production mode because it will have a negative impact
- * on performance if an error is thrown.
- */
-// import 'zone.js/dist/zone-error';  // Included with Angular CLI.
-
-
-/***/ }),
-
 /***/ "eYOR":
 /*!**************************************************!*\
   !*** ./src/app/visiter/login/login.component.ts ***!
@@ -5339,13 +5346,13 @@ LoginComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineCom
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SongPlaylistService", function() { return SongPlaylistService; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
-/* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../environments/environment */ "AytR");
+/* harmony import */ var _environments_environment_prod__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../environments/environment.prod */ "cxbk");
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "tk/3");
 
 
 
 
-const UPR_API = `${_environments_environment__WEBPACK_IMPORTED_MODULE_1__["environment"].apiUrl}`;
+const UPR_API = `${_environments_environment_prod__WEBPACK_IMPORTED_MODULE_1__["environment"].apiUrl}`;
 class SongPlaylistService {
     constructor(httpClient) {
         this.httpClient = httpClient;
@@ -5365,7 +5372,7 @@ SongPlaylistService.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdef
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](SongPlaylistService, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"],
         args: [{
-                providedIn: 'root'
+                providedIn: 'root',
             }]
     }], function () { return [{ type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"] }]; }, null); })();
 
@@ -6883,13 +6890,13 @@ RegisterComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefine
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SongService", function() { return SongService; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
-/* harmony import */ var _Project_Sound_Wave_FrontEnd_src_environments_environment__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../../Project_Sound_Wave_FrontEnd/src/environments/environment */ "eCOg");
+/* harmony import */ var _environments_environment_prod__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../environments/environment.prod */ "cxbk");
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "tk/3");
 
 
 
 
-const URL_API = `${_Project_Sound_Wave_FrontEnd_src_environments_environment__WEBPACK_IMPORTED_MODULE_1__["environment"].apiUrl}`;
+const URL_API = `${_environments_environment_prod__WEBPACK_IMPORTED_MODULE_1__["environment"].apiUrl}`;
 class SongService {
     constructor(httpClient) {
         this.httpClient = httpClient;
@@ -6939,7 +6946,7 @@ SongService.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjec
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](SongService, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"],
         args: [{
-                providedIn: 'root'
+                providedIn: 'root',
             }]
     }], function () { return [{ type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"] }]; }, null); })();
 
@@ -6957,7 +6964,7 @@ SongService.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjec
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UserService", function() { return UserService; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
-/* harmony import */ var _Project_Sound_Wave_FrontEnd_src_environments_environment__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../../Project_Sound_Wave_FrontEnd/src/environments/environment */ "eCOg");
+/* harmony import */ var _environments_environment_prod__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../environments/environment.prod */ "cxbk");
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "tk/3");
 /* harmony import */ var _auth_auth_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../auth/auth.service */ "/AaM");
 
@@ -6965,7 +6972,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-const API_URL = `${_Project_Sound_Wave_FrontEnd_src_environments_environment__WEBPACK_IMPORTED_MODULE_1__["environment"].apiUrl}`;
+const API_URL = `${_environments_environment_prod__WEBPACK_IMPORTED_MODULE_1__["environment"].apiUrl}`;
 // @ts-ignore
 class UserService {
     constructor(http, auth) {
@@ -6990,7 +6997,7 @@ UserService.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjec
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](UserService, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"],
         args: [{
-                providedIn: 'root'
+                providedIn: 'root',
             }]
     }], function () { return [{ type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"] }, { type: _auth_auth_service__WEBPACK_IMPORTED_MODULE_3__["AuthService"] }]; }, null); })();
 
@@ -7191,13 +7198,13 @@ _angular_platform_browser__WEBPACK_IMPORTED_MODULE_3__["platformBrowser"]().boot
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SingerService", function() { return SingerService; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
-/* harmony import */ var _Project_Sound_Wave_FrontEnd_src_environments_environment__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../../Project_Sound_Wave_FrontEnd/src/environments/environment */ "eCOg");
+/* harmony import */ var _environments_environment_prod__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../environments/environment.prod */ "cxbk");
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "tk/3");
 
 
 
 
-const urlApi = `${_Project_Sound_Wave_FrontEnd_src_environments_environment__WEBPACK_IMPORTED_MODULE_1__["environment"].apiUrl}`;
+const urlApi = `${_environments_environment_prod__WEBPACK_IMPORTED_MODULE_1__["environment"].apiUrl}`;
 // @ts-ignore
 class SingerService {
     constructor(httpClient) {
@@ -7215,7 +7222,7 @@ SingerService.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInj
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](SingerService, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"],
         args: [{
-                providedIn: 'root'
+                providedIn: 'root',
             }]
     }], function () { return [{ type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"] }]; }, null); })();
 

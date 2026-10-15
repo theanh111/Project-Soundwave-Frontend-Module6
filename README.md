@@ -116,6 +116,12 @@ _Below is an example of how you can instruct your audience on installing and set
    const API_KEY = "ENTER YOUR API";
    ```
 
+### Node.js compatibility
+
+This project uses Angular 11 and webpack 4. On Node.js 17 and newer, the project scripts enable Node's legacy OpenSSL provider for Angular CLI commands to avoid the `ERR_OSSL_EVP_UNSUPPORTED` error. This setting is applied only on those Node versions, so the declared Node.js 14 runtime is unaffected.
+
+Run Angular CLI commands through the project scripts, for example `npm run build` or `npm run ng -- serve`.
+
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- USAGE EXAMPLES -->
